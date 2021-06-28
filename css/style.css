@@ -7,6 +7,32 @@ body {
     margin-right: 80px;
 }
 
+/* Fonts */
+
+.h2 {
+    font-family: 'PT Serif', Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 48px;
+}
+
+h3 {
+    font-family: 'PT Serif', Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 24px;
+}
+
+p {
+    font-family: 'Raleway', Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 16px;
+}
+
 /* Navigation */
 
 .nav {
@@ -57,14 +83,6 @@ body {
     font-weight: 700;
 }
 
-.h2 {
-    font-family: PT Serif;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 36px;
-    line-height: 48px;
-}
-
 /* Hero */
 
 .hero {
@@ -110,6 +128,8 @@ body {
     min-width: 150px;
 }
 
+/* Skills */
+
 .skills {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -147,10 +167,12 @@ body {
 .skillsText {
     font-family: Raleway;
     font-style: normal;
-    font-weight: 300;
+    font-weight: 400;
     font-size: 18px;
     line-height: 21px;
 }
+
+/* Work */
 
 .work {
     display: grid;
