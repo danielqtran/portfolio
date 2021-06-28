@@ -7,6 +7,10 @@ body {
     margin-right: 80px;
 }
 
+.fas, .fab, .far {
+    font-size: 48px;
+}
+
 /* Fonts */
 
 .h2 {
@@ -133,8 +137,8 @@ p {
 .skills {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 2fr 2fr;
-    grid-template-areas: "skillsTitle skillsTitle skillsTitle" "skillsSubtitle skillsSubtitle skillsSubtitle" "skillItem1 skillItem2 skillItem3" "skillItem4 skillItem5 skillItem6";
+    grid-template-rows: 1fr 2fr;
+    grid-template-areas: "skillsTitle skillsTitle skillsTitle" "skillItem1 skillItem2 skillItem3";
     margin: 40px 0px 0px;
 }
 
@@ -154,14 +158,20 @@ p {
 
 #skillItem1 {
     grid-area: skillItem1;
+    margin-right: 20px;
+    text-align: center;
 }
 
 #skillItem2 {
     grid-area: skillItem2;
+    margin: 0px 20px;
+    text-align: center;
 }
 
 #skillItem3 {
     grid-area: skillItem3;
+    margin-left: 20px;
+    text-align: center;
 }
 
 .skillsText {
@@ -264,6 +274,50 @@ p {
     align-self: center;
     box-shadow: 5px 5px 5px rgba(0, 0, 0, .25);
     cursor: pointer;
+}
+
+/* Footer */
+
+.footer {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+    "contact footerTitle social"
+    "contact CTA social";
+}
+
+footer {
+    margin: none;
+    border-top: 1px solid gray;
+}
+
+.footerTitle {
+    grid-area: footerTitle;
+    text-align: center;
+}
+
+.CTA {
+    grid-area: CTA;
+    display: flex;
+    justify-self: center;
+    align-self: center;
+}
+
+.contact {
+    grid-area: contact;
+    text-align: center;
+    display: flex;
+    justify-self: center;
+    align-self: center;
+}
+
+.social {
+    grid-area: social;
+    text-align: center;
+    display: flex;
+    justify-self: center;
+    align-self: center;
 }
 
 @media screen and (max-width:600px) {
