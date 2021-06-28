@@ -1,0 +1,226 @@
+body {
+    margin-left: 80px;
+    margin-right: 80px;
+}
+
+.nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.navLeft {
+    display: flex;
+}
+
+.navRight {
+    display: flex;
+}
+
+.navItemL {
+    font-family: 'Raleway', Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-right: 20px;
+    cursor: pointer;
+}
+
+.navItemR {
+    font-family: 'Raleway', Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 20px;
+    cursor: pointer;
+}
+
+.navItem:hover {
+    font-weight: 700;
+}
+
+.h2 {
+    font-family: PT Serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 48px;
+}
+
+.hero {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: "heroTitle heroImage" "heroSubtitle heroImage";
+    margin: 40px 0px 0px;
+}
+
+.heroTitle {
+    font-family: PT Serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 64px;
+    grid-area: heroTitle;
+    align-self: end;
+    margin-right: 20px;
+    /* background-color: grey; */
+}
+
+.heroSubtitle {
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 28px;
+    grid-area: heroSubtitle;
+    margin-right: 20px;
+    /* background-color: lightblue; */
+}
+
+.heroImage {
+    grid-area: heroImage;
+    align-self: center;
+    justify-self: flex-end;
+}
+
+#heroImage1 {
+    width: 100%;
+    max-width: 400px;
+    min-width: 150px;
+}
+
+.skills {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 2fr 2fr;
+    grid-template-areas: "skillsTitle skillsTitle skillsTitle" "skillsSubtitle skillsSubtitle skillsSubtitle" "skillItem1 skillItem2 skillItem3" "skillItem4 skillItem5 skillItem6";
+    margin: 20px 0px 0px;
+}
+
+.skillsTitle {
+    grid-area: skillsTitle;
+    align-self: end;
+}
+
+.skillsSubtitle {
+    grid-area: skillsSubtitle;
+    margin: 10px 0px;
+}
+
+.skillItem {
+    align-self: end;
+}
+
+#skillItem1 {
+    grid-area: skillItem1;
+}
+
+#skillItem2 {
+    grid-area: skillItem2;
+}
+
+#skillItem3 {
+    grid-area: skillItem3;
+}
+
+.skillsText {
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 21px;
+}
+
+.work {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 5fr;
+    grid-template-areas: 
+    "workTitle workTitle workTitle"
+    "workItem1 workItem2 workItem3";
+}
+
+.workTitle {
+    grid-area: workTitle;
+    align-self: flex-end;
+}
+
+.workItem {
+    align-self: center;
+    justify-self: center;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 5fr 1fr;
+    grid-template-areas: "workItemImg" "workItemTitle";
+    cursor: pointer;
+    margin: 5px 5px;
+}
+
+#workItem1 {
+    grid-area: workItem1;
+}
+
+#workItem2 {
+    grid-area: workItem2;
+}
+
+#workItem3 {
+    grid-area: workItem3;
+}
+
+.workItemImg {
+    background-color: #EDE4F5;
+    grid-area: workItemImg;
+    display: grid;
+}
+
+#workItemTitle {
+    grid-area: workItemTitle;
+}
+
+#dreamingZebra {
+    /* width: 80%;
+    max-width: 412px; */
+    justify-self: center;
+    align-self: center;
+    /* margin: 10% 10%; */
+    box-shadow: 5px 5px 5px gray;
+}
+
+#fuzzyConnect {
+    max-height: 412px;
+    justify-self: center;
+    align-self: center;
+    margin: 10% 10%;
+}
+
+#bubbleTraveler {
+    max-height: 412px;
+    justify-self: center;
+    align-self: center;
+    margin: 10%;
+}
+
+@media screen and (max-width:600px) {
+    .hero {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 2fr;
+        grid-template-areas: "heroTitle" "heroSubtitle" "heroImage" "heroImage";
+    }
+    body {
+        margin: 5px 18px;
+    }
+}
