@@ -34,7 +34,7 @@ p {
     font-style: normal;
     font-weight: 400;
     font-size: 18px;
-    line-height: 16px;
+    line-height: 18px;
 }
 
 /* Navigation */
@@ -85,6 +85,10 @@ p {
 
 .navItem:hover {
     font-weight: 700;
+}
+
+.logo {
+    text-align: center;
 }
 
 /* Hero */
@@ -153,7 +157,7 @@ p {
 }
 
 .skillItem {
-    align-self: end;
+    /* align-self: end; */
 }
 
 #skillItem1 {
@@ -188,7 +192,9 @@ p {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr auto auto;
-    grid-template-areas: "workTitle workTitle workTitle" "workItem1 workItem2 workItem3" "workDesc1 workDesc2 workDesc3";
+    grid-template-areas: "workTitle workTitle workTitle"
+     "workItem1 workItem2 workItem3" 
+     "workDesc1 workDesc2 workDesc3";
 }
 
 .workTitle {
@@ -310,6 +316,7 @@ footer {
     display: flex;
     justify-self: center;
     align-self: center;
+    text-decoration: none;
 }
 
 .social {
@@ -333,5 +340,14 @@ footer {
         justify-self: center;
         align-self: center;
         margin: 20px 0px;
+    }
+    .nav {
+        flex-direction: column;
+    }
+    .navLeft {
+        flex-direction: column;
+    }
+    .navRight {
+        flex-direction: column;
     }
 }
