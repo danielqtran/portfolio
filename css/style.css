@@ -51,18 +51,20 @@ p {
 /* Navigation */
 
 .nav {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    /* justify-content: space-between; */
     margin: 0px 60px 0px 60px;
 }
 
 .navLeft {
     display: flex;
+    justify-self: flex-start;
 }
 
 .navRight {
     display: flex;
+    justify-self: flex-end;
 }
 
 .navItem {
@@ -72,7 +74,7 @@ p {
     font-size: 16px;
     line-height: 18px;
     display: flex;
-    flex-direction: column;
+    /* flex-direction: column; */
     justify-content: center;
     align-items: center;
     /* padding-top: 5px;
@@ -89,7 +91,11 @@ p {
 }
 
 .logo {
-    text-align: center;
+    justify-self: center;
+}
+
+.logo img {
+    height: 30px;
 }
 
 /* Hero */
