@@ -24,14 +24,16 @@
     <link
         href="https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
     <link rel="stylesheet" href="css/style.css">
     <script src="https://kit.fontawesome.com/78ca37c79c.js" crossorigin="anonymous"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
 <header>
     <div class="nav">
         <div class="navLeft">
-            <i class="fas fa-bars"></i>
+            <div class="navMobile">
+                <i class="menuButton fas fa-bars"></i>
+            </div>
             <div class="navItem navItemL" id="navHome">Home</div>
             <div class="navItem navItemL" id="navWork">Work</div>
             <div class="navItem navItemL" id="navAbout">About</div>
@@ -40,6 +42,13 @@
         <div class="navRight">
             <div class="navItem navItemR" id="navSocial">Social</div>
             <div class="navItem navItemR" id="navContact">Contact</div>
+        </div>
+        <div class="navMobileList" id="dropdown">
+            <div class="navMobileItem">Home</div>
+            <div class="navMobileItem">Work</div>
+            <div class="navMobileItem">About</div>
+            <div class="navMobileItem">Social</div>
+            <div class="navMobileItem">Contact</div>
         </div>
     </div>
 </header>
@@ -128,5 +137,7 @@
     </div>
 
 </footer>
-
+<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="js/index.js"></script>
 </html>
