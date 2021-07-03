@@ -67,6 +67,11 @@ p {
     justify-self: flex-end;
 }
 
+.nav .fa-bars {
+    display: none;
+    cursor: pointer;
+}
+
 .navItem {
     font-family: 'Raleway', Arial, Helvetica, sans-serif;
     font-style: normal;
@@ -164,41 +169,41 @@ p {
 .skillItem {
     /* align-self: end; */
     text-align: center;
-    padding: 0px 80px;
+    padding: 20px 80px;
 }
 
-.skillItem .fas,.far {
+.skillItem .fas, .far {
     padding-bottom: 10px;
 }
 
 #skillItem1 {
     grid-area: skillItem1;
-    margin: 20px 20px 20px 0px;
+    /* margin: 20px 20px 20px 0px; */
 }
 
 #skillItem2 {
     grid-area: skillItem2;
-    margin: 20px;
+    /* margin: 20px; */
 }
 
 #skillItem3 {
     grid-area: skillItem3;
-    margin: 20px 0px 20px 20px;
+    /* margin: 20px 0px 20px 20px; */
 }
 
 #skillItem4 {
     grid-area: skillItem4;
-    margin: 20px 20px 20px 0px;
+    /* margin: 20px 20px 20px 0px; */
 }
 
 #skillItem5 {
     grid-area: skillItem5;
-    margin: 20px;
+    /* margin: 20px; */
 }
 
 #skillItem6 {
     grid-area: skillItem6;
-    margin: 20px 0px 20px 20px;
+    /* margin: 20px 0px 20px 20px; */
 }
 
 /* .skillsText {
@@ -214,7 +219,7 @@ p {
 .work {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr auto auto;
+    grid-template-rows: 1fr 600px auto;
     grid-template-areas: "workTitle workTitle workTitle" "workItem1 workItem2 workItem3" "workDesc1 workDesc2 workDesc3";
     margin-top: 40px;
 }
@@ -231,6 +236,11 @@ p {
     justify-content: center;
     align-content: center;
     cursor: pointer;
+    margin: 0px 20px;
+}
+
+.workDesc {
+    margin: 0px 20px;
 }
 
 .workItem img {
@@ -246,34 +256,34 @@ p {
 #workItem1 {
     grid-area: workItem1;
     background-color: #EDE4F5;
-    margin-right: 20px;
+    /* margin-right: 20px; */
 }
 
 #workDesc1 {
-    margin-right: 20px;
+    /* margin-right: 20px; */
     grid-area: workDesc1;
 }
 
 #workItem2 {
     grid-area: workItem2;
     background-color: #A9E4D9;
-    margin: 0px 20px;
+    /* margin: 0px 20px; */
 }
 
 #workDesc2 {
     grid-area: workDesc2;
-    margin: 0px 20px;
+    /* margin: 0px 20px; */
 }
 
 #workItem3 {
     grid-area: workItem3;
     background-color: #FFE59D;
-    margin-left: 20px;
+    /* margin-left: 20px; */
 }
 
 #workDesc3 {
     grid-area: workDesc3;
-    margin-left: 20px;
+    /* margin-left: 20px; */
 }
 
 #workItemTitle {
@@ -429,6 +439,7 @@ body {
     }
     .nav {
         flex-direction: column;
+        margin: 18px;
     }
     .navLeft {
         flex-direction: column;
@@ -436,16 +447,46 @@ body {
     .navRight {
         flex-direction: column;
     }
-
     .skills {
         grid-template-columns: 1fr;
         grid-template-rows: 1fr auto auto auto auto auto auto auto;
         grid-template-areas: "skillsTitle" "skillsSubtitle" "skillItem1" "skillItem2" "skillItem3" "skillItem4" "skillItem5" "skillItem6";
     }
-
     .skillItem {
         margin-left: 0px;
         margin-right: 0px;
+    }
+    .work {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto 300px auto 300px auto 300px auto;
+        grid-template-areas: "workTitle" "workItem1" "workDesc1" "workItem2" "workDesc2" "workItem3" "workDesc3";
+        margin-top: 10px;
+    }
+    .workItem, .workDesc {
+        margin: 0px;
+    }
+    .footer {
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: 1fr auto auto auto auto;
+        grid-template-areas: "footerTitle" "CTA" "social" "contact";
+        margin: 20px 18px;
+        min-height: 0px;
+        justify-content: center;
+        border-top: 2px solid black;
+    }
+    .leftLine {
+        display: none;
+    }
+    .rightLine {
+        display: none;
+    }
+    .footerItem {
+        padding: 10px 0px;
+    }
+    .footerTitle {
+        padding: 20px;
     }
 }
 
@@ -453,6 +494,9 @@ body {
     .footerTitle {
         font-size: 34px;
         line-height: 34px;
+    }
+    .work {
+        grid-template-rows: auto 400px auto;
     }
 }
 
@@ -466,5 +510,19 @@ body {
     }
     .social .fab {
         padding: 5px;
+    }
+    .skillItem {
+        padding: 10px 0px;
+    }
+    .navItem {
+        display: none;
+    }
+    .nav .fa-bars {
+        display: initial;
+    }
+
+    .nav, .hero, .skills, .work {
+        margin-left: 40px;
+        margin-right: 40px;
     }
 }
