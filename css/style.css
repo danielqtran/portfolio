@@ -145,7 +145,7 @@ p {
 
 .skills {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: auto auto auto;
     grid-template-rows: 1fr auto 1fr 1fr;
     grid-template-areas: "skillsTitle skillsTitle skillsTitle" "skillsSubtitle skillsSubtitle skillsSubtitle" "skillItem1 skillItem2 skillItem3" "skillItem4 skillItem5 skillItem6";
     margin-top: 40px;
@@ -418,8 +418,9 @@ body {
         grid-template-rows: auto auto auto;
         grid-template-areas: "heroTitle" "heroSubtitle" "heroImage" "heroImage";
     }
-    body {
-        margin: 5px 18px;
+    .hero, .skills, .work {
+        margin-left: 18px;
+        margin-right: 18px;
     }
     .heroImage {
         justify-self: center;
@@ -434,6 +435,17 @@ body {
     }
     .navRight {
         flex-direction: column;
+    }
+
+    .skills {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr auto auto auto auto auto auto auto;
+        grid-template-areas: "skillsTitle" "skillsSubtitle" "skillItem1" "skillItem2" "skillItem3" "skillItem4" "skillItem5" "skillItem6";
+    }
+
+    .skillItem {
+        margin-left: 0px;
+        margin-right: 0px;
     }
 }
 
