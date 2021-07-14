@@ -10,6 +10,9 @@ $(".navMobile").click(function () {
     }
 });
 
+ScrollReveal().reveal('.work');
+// ScrollReveal().reveal('.workDesc', { delay: 500 });
+
 // $(".navMobile").click(function () {
 //     $(".navMobileList").slideToggle();
 //     if ($(".menuButton").hasClass("fa-bars")) {
