@@ -1,5 +1,5 @@
 $(".navMobile").click(function () {
-    $(".navMobileList").toggleClass("active");
+    $(".navMobileList").toggleClass("mainActive");
     if ($(".menuButton").hasClass("fa-bars")) {
         $(".menuButton").removeClass("fa-bars");
         $(".menuButton").addClass("fa-times");
