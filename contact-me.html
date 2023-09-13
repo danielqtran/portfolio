@@ -1,11 +1,11 @@
 <!DOCTYPE html><!--  This site was created in Webflow. https://www.webflow.com  -->
 <!--  Last Published: Wed Sep 13 2023 20:04:22 GMT+0000 (Coordinated Universal Time)  -->
-<html data-wf-page="64e68fe662e1f800f98c608d" data-wf-site="62a8f86b4596dfc0e64c2867">
+<html data-wf-page="64e676d54f49ae327309f9bd" data-wf-site="62a8f86b4596dfc0e64c2867">
 <head>
   <meta charset="utf-8">
-  <title>About Me</title>
-  <meta content="About Me" property="og:title">
-  <meta content="About Me" property="twitter:title">
+  <title>Contact Me</title>
+  <meta content="Contact Me" property="og:title">
+  <meta content="Contact Me" property="twitter:title">
   <meta content="width=device-width, initial-scale=1" name="viewport">
   <meta content="Webflow" name="generator">
   <link href="css/normalize.css" rel="stylesheet" type="text/css">
@@ -19,14 +19,14 @@
   <link href="images/favicon.ico" rel="shortcut icon" type="image/x-icon">
   <link href="images/webclip.png" rel="apple-touch-icon">
 </head>
-<body>
+<body class="body-2">
   <div data-animation="default" data-collapse="medium" data-duration="400" data-easing="ease" data-easing2="ease" role="banner" class="navbar w-nav">
     <div class="container w-container">
       <a href="index.html" class="brand w-nav-brand">
         <div class="nav-logo">Daniel Tran&#x27;s Portfolio</div>
       </a>
       <nav role="navigation" class="w-nav-menu">
-        <a href="about-me.html" aria-current="page" class="nav-link w-nav-link w--current">About</a>
+        <a href="about-me.html" class="nav-link w-nav-link">About</a>
         <a href="mailto:daniel.q.tran@gmail.com?subject=Hello!" class="nav-link w-nav-link">Contact</a>
       </nav>
       <div class="w-nav-button">
@@ -34,14 +34,24 @@
       </div>
     </div>
   </div>
-  <section>
-    <div class="w-layout-blockcontainer container w-container">
-      <h2 class="heading-2">About Myself</h2>
-      <div id="w-node-dab4e8a6-a92a-cb7b-7561-239f95bcb6eb-f98c608d" class="w-layout-layout quick-stack-8 wf-layout-layout">
-        <div id="w-node-dab4e8a6-a92a-cb7b-7561-239f95bcb6ec-f98c608d" class="w-layout-cell">
-          <div class="project-description">Daniel is a UI/UX Designer from Portland, Oregon.<br><br>Before working as a designer, he spent several years in the social work field as a residential counselor working with at-risk youth ages 12-18, which taught him a great deal about the value of empathy and patience.<br><br>In his free time, Daniel loves to go on adventures, usually in some combination of hiking, food, and music.</div>
+  <section class="section-2">
+    <div class="w-layout-blockcontainer w-container">
+      <h2 class="heading-2 title">Let&#x27;s Collaborate Together</h2>
+      <div class="project-description w-form">
+        <form id="email-form" name="email-form" data-name="Email Form" method="get" data-wf-page-id="64e676d54f49ae327309f9bd" data-wf-element-id="04e83b36-cb0d-c12b-c2be-eca8b452f0da">
+          <div class="div-block-6">
+            <div><label for="name-2" class="field-label">Name*</label><input type="text" class="text-field w-input" maxlength="256" name="name-2" data-name="Name 2" placeholder="Enter your name" id="name-2"></div>
+            <div id="w-node-_04e83b36-cb0d-c12b-c2be-eca8b452f0e0-b452f0d9"><label for="email-2" class="field-label">Email Address*</label><input type="email" class="text-field w-input" maxlength="256" name="email-2" data-name="Email 2" placeholder="Enter your email address" id="email-2" required=""></div>
+          </div>
+          <div><label for="field-2" class="field-label">Message</label><textarea placeholder="Say hi!" maxlength="5000" id="field-2" name="field-2" data-name="Field 2" class="text-field w-input"></textarea></div>
+          <div class="div-block-5"><input type="submit" value="Submit" data-wait="Please wait..." class="submit-button w-button"></div>
+        </form>
+        <div class="w-form-done">
+          <div>Thank you! Your submission has been received!</div>
         </div>
-        <div id="w-node-dab4e8a6-a92a-cb7b-7561-239f95bcb6ed-f98c608d" class="w-layout-cell"><img src="images/aboutme1.jpg" loading="lazy" sizes="(max-width: 479px) 92vw, (max-width: 767px) 95vw, (max-width: 991px) 96vw, (max-width: 1161px) 93vw, 1080px" srcset="images/aboutme1.jpg 500w, images/aboutme1.jpg 800w, images/aboutme1.jpg 1080w" alt="" class="image"></div>
+        <div class="w-form-fail">
+          <div>Oops! Something went wrong while submitting the form.</div>
+        </div>
       </div>
     </div>
   </section>
