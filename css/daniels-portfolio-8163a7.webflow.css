@@ -20,6 +20,12 @@
   display: block;
 }
 
+.w-layout-hflex {
+  flex-direction: row;
+  align-items: flex-start;
+  display: flex;
+}
+
 .w-embed-youtubevideo {
   width: 100%;
   background-image: url('https://d3e54v103j8qbb.cloudfront.net/static/youtube-placeholder.2b05e7d68d.svg');
@@ -293,11 +299,10 @@ img {
 
 .project-description {
   margin-top: 10px;
-  padding-top: 0;
   font-family: Merriweather, serif;
   font-size: 17px;
   line-height: 26px;
-  list-style-type: decimal;
+  list-style: decimal;
 }
 
 .project-heading-2 {
@@ -322,6 +327,7 @@ img {
 
 .highlight {
   margin-top: 10px;
+  padding: 20px;
 }
 
 .highlight.blue {
@@ -334,19 +340,25 @@ img {
   margin-top: 20px;
 }
 
-.highlight.green, .highlight.pink {
+.highlight.green {
+  background-color: #a9e4d9;
   margin-top: 20px;
 }
 
-.highlight {
+.highlight.pink {
+  background-color: #ede4f5;
+  margin-top: 20px;
+}
+
+.highlight2 {
   padding: 20px;
 }
 
-.highlight.green {
+.highlight2.green2 {
   background-color: #a9e4d9;
 }
 
-.highlight.pink {
+.highlight2.pink2 {
   background-color: #ede4f5;
 }
 
@@ -552,6 +564,16 @@ img {
   padding: 0;
 }
 
+.flex-block, .flex-block-2 {
+  justify-content: center;
+}
+
+.quick-stack-14 {
+  padding-left: 0;
+  padding-right: 0;
+  font-size: 17px;
+}
+
 @media screen and (max-width: 991px) {
   .container {
     padding-left: 20px;
@@ -589,6 +611,21 @@ img {
     line-height: 24px;
   }
 
+  .highlight.yellow {
+    padding: 20px;
+  }
+
+  .highlight2.green2 {
+    margin-top: auto;
+    margin-bottom: 0;
+    padding: 0;
+  }
+
+  .highlight2.pink2 {
+    margin-top: auto;
+    padding: 10px;
+  }
+
   .subheading {
     font-size: 24px;
     line-height: 32px;
@@ -596,6 +633,11 @@ img {
 
   .hero-title {
     max-width: 100%;
+  }
+
+  .quick-stack-3 {
+    padding-top: 10px;
+    padding-bottom: 10px;
   }
 
   .quick-stack-5 {
@@ -635,6 +677,14 @@ img {
     padding-left: 0;
     padding-right: 0;
   }
+
+  .quick-stack-13 {
+    padding: 10px;
+  }
+
+  .cell-13 {
+    justify-content: center;
+  }
 }
 
 @media screen and (max-width: 479px) {
@@ -655,11 +705,15 @@ img {
   }
 
   .heading-2.secondary {
+    margin-top: 10px;
+    margin-bottom: 10px;
     font-size: 18px;
   }
 
   .heading-2.title {
+    margin-bottom: 10px;
     font-size: 28px;
+    line-height: 34px;
   }
 
   .brand {
@@ -687,6 +741,10 @@ img {
     display: block;
   }
 
+  .image.seventy-five {
+    width: 100%;
+  }
+
   .section {
     margin-left: 20px;
     margin-right: 20px;
@@ -700,8 +758,21 @@ img {
 
   .project-heading-2 {
     margin-top: 10px;
-    font-size: 18px;
-    line-height: 22px;
+    font-size: 22px;
+    line-height: 24px;
+  }
+
+  .highlight.blue, .highlight.green {
+    margin-top: 10px;
+  }
+
+  .highlight2.green2 {
+    margin-top: 0;
+    padding: 10px;
+  }
+
+  .blue-highlight {
+    padding: 10px;
   }
 
   .subheading {
@@ -727,10 +798,15 @@ img {
   }
 
   .quick-stack-6 {
-    grid-column-gap: 5px;
-    grid-row-gap: 5px;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
     padding-left: 0;
     padding-right: 0;
+  }
+
+  .quick-stack-7 {
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
   }
 
   .cell-11 {
@@ -748,6 +824,10 @@ img {
 
   .cell-12 {
     align-items: center;
+  }
+
+  .mobile-link {
+    font-size: 13px;
   }
 }
 
@@ -1094,7 +1174,7 @@ img {
   grid-area: span 1 / span 1 / span 1 / span 1;
 }
 
-#w-node-_1fc565b0-aa34-387a-0ea7-1ee814810a24-7ccccce2 {
+#w-node-b61eb15d-272a-b57a-60da-7ceeef97315b-7ccccce2, #w-node-_1fc565b0-aa34-387a-0ea7-1ee814810a24-7ccccce2 {
   grid-template-rows: auto;
   grid-template-columns: 1fr 1fr;
 }
@@ -1184,6 +1264,13 @@ img {
   grid-area: span 1 / span 1 / span 1 / span 1;
 }
 
+@media screen and (max-width: 991px) {
+  #w-node-_55660b1f-8285-80dd-d715-b1f09856f66e-d019db50 {
+    grid-template-rows: auto;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
 @media screen and (max-width: 767px) {
   #w-node-_9f9ab21a-624a-5205-955f-d693b8e7fea2-7ccccce2, #w-node-_5bcdb7cc-25ee-3155-7835-19c99b41da91-60de90ac, #w-node-dab4e8a6-a92a-cb7b-7561-239f95bcb6eb-f98c608d {
     grid-template-rows: auto;
@@ -1237,13 +1324,18 @@ img {
     grid-area: span 1 / span 1 / span 1 / span 1;
   }
 
-  #w-node-bea734d4-543e-83e8-70f7-886b9eab494f-3ee763f1 {
+  #w-node-_55660b1f-8285-80dd-d715-b1f09856f66e-d019db50, #w-node-bea734d4-543e-83e8-70f7-886b9eab494f-3ee763f1 {
     grid-template-rows: auto;
     grid-template-columns: 1fr;
   }
 
   #w-node-bea734d4-543e-83e8-70f7-886b9eab4950-3ee763f1, #w-node-bea734d4-543e-83e8-70f7-886b9eab4951-3ee763f1 {
     grid-area: span 1 / span 1 / span 1 / span 1;
+  }
+
+  #w-node-_16421f75-ea69-faad-4fa7-9fb7ce0e4e11-3ee763f1, #w-node-_64ec4bfd-98cc-2531-02ec-618a7b55d638-3ee763f1, #w-node-_12040c08-4eea-3cde-3bac-ed4cee4a3ab8-3ee763f1, #w-node-f99651ad-aada-b512-c7d0-5977e01dc5e9-3ee763f1 {
+    grid-template-rows: minmax(auto, 600fr);
+    grid-template-columns: 1fr;
   }
 
   #w-node-bea734d4-543e-83e8-70f7-886b9eab494f-7ccccce2 {
@@ -1255,7 +1347,7 @@ img {
     grid-area: span 1 / span 1 / span 1 / span 1;
   }
 
-  #w-node-_9f9ab21a-624a-5205-955f-d693b8e7fea2-7ccccce2, #w-node-_5bcdb7cc-25ee-3155-7835-19c99b41da91-7ccccce2 {
+  #w-node-_9f9ab21a-624a-5205-955f-d693b8e7fea2-7ccccce2, #w-node-_5bcdb7cc-25ee-3155-7835-19c99b41da91-7ccccce2, #w-node-_84e4273b-ebf9-18f0-0a14-395cbfa05fa1-7ccccce2 {
     grid-template-rows: auto;
     grid-template-columns: 1fr;
   }
@@ -1265,7 +1357,7 @@ img {
     grid-template-columns: 1fr;
   }
 
-  #w-node-bea734d4-543e-83e8-70f7-886b9eab494f-60de90ac {
+  #w-node-b61eb15d-272a-b57a-60da-7ceeef97315b-7ccccce2, #w-node-_1fc565b0-aa34-387a-0ea7-1ee814810a24-7ccccce2, #w-node-bea734d4-543e-83e8-70f7-886b9eab494f-60de90ac {
     grid-template-rows: auto;
     grid-template-columns: 1fr;
   }
@@ -1274,7 +1366,7 @@ img {
     grid-area: span 1 / span 1 / span 1 / span 1;
   }
 
-  #w-node-_5bcdb7cc-25ee-3155-7835-19c99b41da91-60de90ac, #w-node-dab4e8a6-a92a-cb7b-7561-239f95bcb6eb-f98c608d {
+  #w-node-_5bcdb7cc-25ee-3155-7835-19c99b41da91-60de90ac, #w-node-_84e4273b-ebf9-18f0-0a14-395cbfa05fa1-60de90ac, #w-node-_1fc565b0-aa34-387a-0ea7-1ee814810a24-60de90ac, #w-node-dab4e8a6-a92a-cb7b-7561-239f95bcb6eb-f98c608d {
     grid-template-rows: auto;
     grid-template-columns: 1fr;
   }
